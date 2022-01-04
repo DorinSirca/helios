@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "184935200226",
+    "firebase_url": "https://helios-e4305-default-rtdb.firebaseio.com",
+    "project_id": "helios-e4305",
+    "storage_bucket": "helios-e4305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184935200226:android:f324f61fc659da726c75bb",
+        "android_client_info": {
+          "package_name": "com.helios.helios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184935200226-6jmm7v0le4knmq068ni9a38jgta2l0c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKDh_U-q9ta5xuW8yOpoX1wjzjVAVhW9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184935200226-6jmm7v0le4knmq068ni9a38jgta2l0c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        "portfolios": {
+          ".read": "$uid == auth.uid",
+          ".write": "$uid == auth.uid",
+          "$pid": {
+            ".read": "$uid == auth.uid || root.child('shared-portfolios/' + $pid).exists()",
+            ".write": "$uid == auth.uid"
+          }
+        },
+        "transactions": {
+          "$pid": {
+            ".read": "$uid == auth.uid || root.child('shared-portfolios/' + $pid).exists()",
+            ".write": "$uid == auth.uid"
+          }
+        }
+      }
+    },
+    "shared-portfolios": {
+      "$pid": {
+        ".read": true,
+        ".write": "data.val() == null && newData.val() == auth.uid || data.val() == auth.uid && newData.val() == null"
+      }
+    }
+  }
+}
